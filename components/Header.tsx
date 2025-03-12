@@ -6,7 +6,7 @@ import NextLogo from "../public/Logo/Logo.png";
 export function Header(params: HeaderParams) {
   const { href, type } = params;
   return (
-    <header className="border-b md:px-5">
+    <header className="border-b md:px-5 ani-fadeDown">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <Image

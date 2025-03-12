@@ -129,4 +129,10 @@
   .btn-mode-animate {
     @apply animate-fade animate-ease-in animate-normal;
   }
+  .ani-fadeUp {
+    @apply animate-fade-up animate-ease-out animate-normal;
+  }
+  .ani-fadeDown {
+    @apply animate-fade-down animate-ease-out animate-normal;
+  }
 }
