@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 const layout = ({ children }: { children: ReactNode }) => {
   return (
     <main>
-      <Header href={"/sign-in"} type={"SignIn"} />
+      <Header href={"/"} type={"Home"} />
       {children}
     </main>
   );

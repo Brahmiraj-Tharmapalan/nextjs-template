@@ -12,7 +12,7 @@ export default function ThemeToggle() {
       variant="outline"
       size="icon"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="absolute top-5 right-5 z-50"
+      className="absolute top-20 right-3 md:top-20 md:right-5 z-50"
     >
       <SunIcon className="h-[1.2rem] w-[1.2rem] dark:hidden btn-mode-animate" />
       <MoonIcon className="h-[1.2rem] w-[1.2rem] hidden dark:block btn-mode-animate" />
