@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@import "tailwindcss-animated";
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
@@ -122,5 +122,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-mode-animate {
+    @apply animate-fade animate-ease-in animate-normal;
   }
 }
