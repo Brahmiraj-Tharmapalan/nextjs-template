@@ -1,9 +1,15 @@
+"use client";
+import Authform from '@/components/AuthForm'
+import { signInSchema } from '@/lib/validations'
 import React from 'react'
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+const page = () => (
+  <Authform
+    type="SIGN_IN"
+    schema={signInSchema}
+    defaultValues={{ email: "", password: "" }}
+    onSubmit={() => {}}
+    />
+)
 
 export default page
