@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import "tailwindcss-animated";
-@plugin "tailwindcss-animate";
+@plugin "tailwindcss-motion";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -127,6 +126,18 @@
 
 @layer components {
   .btn-mode-animate {
-    @apply animate-fade animate-ease-in animate-normal;
+    @apply motion-preset-pop;
+  }
+  .ani-fadeUp {
+    @apply motion-duration-1500/translate motion-duration-1500/blur motion-translate-y-in-100 motion-blur-in-lg;
+  }
+  .ani-fadeDown {
+    @apply -motion-translate-y-in-50 motion-ease-bounce;
+  }
+  .ani-delaySideBounce{
+    @apply motion-preset-slide-right-lg motion-duration-2000 motion-delay-1500 motion-ease-bounce;
+  }
+  .ani-hoverRotate{
+    @apply motion-rotate-out-45 motion-delay-1000
   }
 }

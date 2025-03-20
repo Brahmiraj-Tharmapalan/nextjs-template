@@ -12,10 +12,10 @@ export default function ThemeToggle() {
       variant="outline"
       size="icon"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="absolute top-20 right-3 md:top-20 md:right-5 z-50"
+      className="group"
     >
-      <SunIcon className="h-[1.2rem] w-[1.2rem] dark:hidden btn-mode-animate" />
-      <MoonIcon className="h-[1.2rem] w-[1.2rem] hidden dark:block btn-mode-animate" />
+      <SunIcon className="h-[1.2rem] w-[1.2rem] dark:hidden group-focus:motion-preset-pop" />
+      <MoonIcon className="h-[1.2rem] w-[1.2rem] hidden dark:block group-focus:motion-preset-pop" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
