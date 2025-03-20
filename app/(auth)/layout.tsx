@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Header href={"/"} type={"Home"} />
       {children}
     </main>

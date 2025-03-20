@@ -8,13 +8,16 @@ const LandingPage = (params: LandingPageParams) => {
   const { badge, heading, description, buttons } = params;
   return (
     <section className="py-32 px-10 ani-fadeUp">
-      <div className="container">
+      <div className="">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             {badge && (
-              <Badge variant="outline">
+              <Badge variant="outline" className="ani-delaySideBounce group">
                 {badge}
+                <div className="group-hover:motion-rotate-out-45 group-hover:-translate-y-0.5 group-hover:duration-300">
+
                 <ArrowUpRight className="ml-2 size-4" />
+                </div>
               </Badge>
             )}
             <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
